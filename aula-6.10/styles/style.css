@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    max-width: 2000px;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(37, 37, 192);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 85%;
+    margin: 0;
+}
+
+nav {
+    grid-area: nav;
+    color: #fff;
+    padding: 20px;
+    background-color: rgb(213, 213, 213);
+    position: sticky;
+    align-self: flex-start;
+    top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+grid-area: main;
+text-align: center;
+/* overflow: auto; */
+}
+
+
+
+.sectionmain {
+padding: 20px;
+background-color: #fff;
+}
+
+.sectionproduto1 {
+    display: flex;
+
+}
+
+.sectionproduto2 {
+display: flex;
+}
+
+.flexitem {
+        border: solid 1px black;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(227, 224, 224);
+}
+
+img {
+    max-width: 50%;
+}
+
+.img1 {
+    height: 74px;
+}
+button {
+    background-color: seagreen;
+    color: #fff;
+    outline: oldlace;
+    padding: 20px;
+    cursor: pointer;
+    width: 30%;
+    /* margin: auto; */
+}
+
+.servicelist {
+    display: flex;
+    /* background-color: rgb(123, 152, 231);
+    color: #fff; */
+    gap: 20px;
+   margin-top: 35px;
+
+}
+
+.serviceitem {
+    border-left: solid 3px blue;
+    padding: 15px;
+}
+
+
+#buttomform {
+    display: flex;
+width: 30%;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.formcontato {
+display: flex;
+flex-direction: column;
+/* max-width: 600px;
+margin: auto; */
+}
+
+.formcontato textarea {
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px 0; */
+    box-sizing: border-box;
+    resize: none;
+}
+
+
+
+footer {
+    grid-area: footer;
+    background-color:  rgb(37, 37, 192);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.div000 {
+    width: 80%;
+    height: 65px;
+}
+
+.div111 {
+width: 80%;
+    height: 65px;
+}
+
